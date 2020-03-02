@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaac Ben-Ami</title>
+
+
+    <!-- css styling -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137489045-1"></script>
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-137489045-1');
+</script>
+
+
+</head>
+
+
+<body>
+
+    <nav class="navbar navbar-toggleable-sm navbar-light">
+
+    <div class="navbar-header">
+    <button type="button" class="navbar-toggler navbar-toggler-right collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+    <span class="sr-only">Toggle navigation</span>
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand pull left" href="#"></a>
+    </div>
+
+    <div id="navbar" class="navbar-collapse collapse">
+        <div class="navbar navbar-nav ml-auto">
+            <a class="nav-item nav-link" href="index.html">About</a>
+            <a class="nav-item nav-link" href="cv.html">Resume/CV</a>
+            <!-- <a class="nav-item nav-link" href="pubs.html">Links</a> -->
+        </div>
+    </div>
+    </nav>
+
+
+    <!-- Section: intro -->
+    <div class="intro-content">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                   Reverse String using JavaScript
+                </div>
+
+                <div class="col-sm-6 col-md-6 col-lg-6 slogan">
+
+                    <label>
+                        Enter any string: 
+                    </label>
+
+                    <input type="text" name="input" value="Reverse this string" onclick="reverseString()"><button>reverse!</button>
+                    <br>
+                    <p id="result"></p>
+                    <script type="text/javascript">
+                        function reverseString(){
+                            var str = document.getElementByTagName("input").value;
+                            var result = "";
+
+                            for (var i = str.length - 1; i >= 0; i--) { 
+                                newString += str[i]; 
+                            }
+
+                            document.getElementById("result").innerHTML = result;
+
+                        }
+                    </script>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="navbar navbar-default bottom">
+                <div class="text-center">
+                <span class="copy-left"><a href="https://copyleft.org">©</a></span> Isaac Ben-Ami 2019
+                </div>
+        </div>
+    </footer>
+
+    <!-- script for altmetric badges and js -->
+    <script src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src='js/bootstrap.js'></script>
+
+
+</body>
+
+</html>
