@@ -85,7 +85,13 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
+    outline: 0;
 }
+
+*:focus {
+    outline: 0;
+}
+
 
 /* ===========
 misc elements
@@ -204,3 +210,6 @@ publications
     font-size: 16px;
     vertical-align: middle;
 }
+
+
+
