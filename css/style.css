@@ -90,6 +90,15 @@ Text.blockText {
     font-weight: 700;
 }
 
+Text.blockTextProject {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    font-family: 'Raleway', sans-serif;
+    font-size:  12px;
+    font-weight: 700;
+}
+
 
 div.imageDetail {
     margin: auto;
