@@ -482,6 +482,14 @@
 
   // Actually draw the thing
   drawFigure();
+
+  //download file on load
+  window.onload = function(){
+    var a = document.createElement("a");
+    a.href = "challenge-figure.html";
+    a.download = true;
+    a.click();
+  };
 </script>
 
 </body>
